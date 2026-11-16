@@ -137,13 +137,13 @@
       for (let t = c.trail; t >= 1; t--) {
         const ty = (c.y - t) * FONT;
         if (ty < -FONT || ty > H) continue;
-        const a = 0.05 + (1 - t / c.trail) * 0.28;
-        ctx.fillStyle = 'rgba(255,255,255,' + a.toFixed(3) + ')';
+        const a = 0.05 + (1 - t / c.trail) * 0.34;
+        ctx.fillStyle = 'rgba(0,232,84,' + a.toFixed(3) + ')';
         ctx.fillText(c.chars[t % c.chars.length], c.x, ty);
       }
       const hy = c.y * FONT;
       if (hy > -FONT && hy < H + FONT) {
-        ctx.fillStyle = 'rgba(255,255,255,0.95)';
+        ctx.fillStyle = 'rgba(196,255,208,0.98)';
         ctx.fillText(c.chars[0], c.x, hy);
       }
       c.y += c.speed;
