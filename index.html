@@ -135,7 +135,7 @@
   function draw() {
     ctx.fillStyle = 'rgba(0,0,0,0.13)';
     ctx.fillRect(0, 0, W, H);
-    ctx.font = FONT + 'px Impact,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif';
+    ctx.font = '700 ' + FONT + 'px Impact,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif';
     ctx.textBaseline = 'top';
     for (const c of columns) {
       for (let t = c.trail; t >= 1; t--) {
